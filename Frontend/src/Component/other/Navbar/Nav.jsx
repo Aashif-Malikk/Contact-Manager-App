@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Nav.css'
 
 function Nav({ onClose }) {
@@ -19,9 +19,9 @@ function Nav({ onClose }) {
                     </div>
                     <div>
                         <div className='navbar-nav d-flex flex-row flex-wrap align-items-center gap-3'>
-                            <NavLink style={{ color: 'black' }} className={linkClass} to='home'>Home</NavLink>
-                            <NavLink style={{ color: 'black' }} className={linkClass} to='profile'>Profile</NavLink>
-                            <NavLink style={{ color: 'black' }} className={linkClass} to='addContact'>Add Contact</NavLink>
+                            <NavLink style={{ color: 'black' }} className={linkClass} to='/home'>Home</NavLink>
+                            <NavLink style={{ color: 'black' }} className={linkClass} to='/profile'>Profile</NavLink>
+                            <NavLink style={{ color: 'black' }} className={linkClass} to='/addContact'>Add Contact</NavLink>
                         </div>
                     </div>
                     <div className='d-flex flex-wrap align-items-center gap-2'>
@@ -36,8 +36,8 @@ function Nav({ onClose }) {
                                 aria-label="Search"
                             />
                         </div>
-                        <a href='/auth/login' className='btn btn-outline-primary rounded border fw-bold'>Login</a>
-                        <a href='/auth/signup' className='btn rounded border border-success btn-success fw-bold'>SignUp</a>
+                        <Link to='/auth/login' className='btn btn-outline-primary rounded border fw-bold'>Login</Link>
+                        <Link to='/auth/signup' className='btn rounded border border-success btn-success fw-bold'>SignUp</Link>
                     </div>
                 </nav>
             )}
@@ -64,7 +64,6 @@ function Nav({ onClose }) {
                             <div className='navbar-nav-2 navbar-nav d-flex flex-column'>
                                 <NavLink to="/home" className={linkClass2} onClick={onClose}><i className="fa-regular fa-house"></i> Home</NavLink>
                                 <NavLink to="/addContact" className={linkClass2} onClick={onClose}><i className="fa-regular fa-address-book"></i> Add Contacts</NavLink>
-                                <NavLink to="/groups" className={linkClass2} onClick={onClose}><i className="fa-solid fa-users"></i>Groups</NavLink>
                                 <NavLink to="/profile" className={linkClass2} onClick={onClose}><i className="fa-regular fa-circle-user"></i>Profile</NavLink>
                                 <NavLink to="/myfavorite" className={linkClass2} onClick={onClose}><i className="fa-regular fa-star"></i>Favorite</NavLink>
                             </div>
