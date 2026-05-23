@@ -1,0 +1,31 @@
+.hero-overlay {
+    background: linear-gradient(105deg,
+            rgba(15, 23, 42, 0.92) 0%,
+            rgba(15, 23, 42, 0.55) 48%,
+            rgba(15, 23, 42, 0.35) 100%);
+    /* border-radius: inherit; */
+}
+
+.nav-link:hover {
+    background-color: rgba(119, 197, 228, 0.334);
+    transition: 0.5s ease;
+    color: rgb(80, 80, 250);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.active {
+    color: rgb(80, 80, 250) !important;
+    background-color: rgba(119, 197, 228, 0.334);
+    /* color: white; */
+}
+
+nav {
+  overflow-x: hidden;
+}
