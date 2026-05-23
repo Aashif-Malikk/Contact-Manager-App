@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ContactStatusFunc } from '../Home'
 
-const API_BASE = 'http://localhost:3333'
+const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
 
 export function EditMyProfile(props) {
   const [updatedProfile, setupdatedProfile] = useState({
@@ -113,7 +113,7 @@ function Profile() {
 
   useEffect(() => {
     const main = async () => {
-      const res = await fetch('http://localhost:3333/profile', {
+      const res = await fetch(`${API_BASE}/profile`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem("token")}`
         }
