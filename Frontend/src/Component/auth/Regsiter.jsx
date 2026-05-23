@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
 
 function Regsiter() {
     const [user, setuser] = useState({})
@@ -12,7 +13,7 @@ function Regsiter() {
     const submitHandler = async (e) => {
         e.preventDefault()
 
-        await fetch('http://localhost:3333/auth/signup', {
+        await fetch(`${API_BASE}/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

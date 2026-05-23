@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
 
 function Login() {
     // let isloggedin = localStorage.getItem("isloggedin")
@@ -21,7 +22,7 @@ function Login() {
     const submitHandler = async (e) => {
         e.preventDefault()
 
-        await fetch('http://localhost:3333/auth/login', {
+        await fetch(`${API_BASE}/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
