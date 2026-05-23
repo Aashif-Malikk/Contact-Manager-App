@@ -13,7 +13,7 @@ function Regsiter() {
     const submitHandler = async (e) => {
         e.preventDefault()
 
-        await fetch(`${API_BASE}/signup`, {
+        await fetch(`${API_BASE}/auth/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

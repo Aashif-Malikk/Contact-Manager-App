@@ -22,7 +22,7 @@ function Login() {
     const submitHandler = async (e) => {
         e.preventDefault()
 
-        await fetch(`${API_BASE}/login`, {
+        await fetch(`${API_BASE}/auth/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
