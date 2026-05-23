@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import './Home.css'
-const API_BASE = 'http://localhost:3333'
+const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
 
 
 const contactStatus = [

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-const API_BASE = 'http://localhost:3333'
+const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
 
 
 function FavoriteSection() {
