@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
+import { API_BASE } from '../../../apiConfig'
 
 
 function FavoriteSection() {

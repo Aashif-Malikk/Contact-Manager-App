@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import './Home.css'
-const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
+import { API_BASE } from '../../apiConfig'
 
 
 const contactStatus = [

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
-const API_BASE = 'https://contact-manager-app-uux8.onrender.com'
+import { API_BASE } from '../../apiConfig'
 
 function Login() {
     // let isloggedin = localStorage.getItem("isloggedin")
