@@ -7,7 +7,7 @@ import RealAuth from './Component/auth/RealAuth'
 import Home from './Component/other/Home'
 import Layout from './Layout'
 import AddContact from './Component/other/Contact Add/AddContact'
-import Profile from './Component/other/User Profile/profile'
+import Profile from './Component/other/User Profile/Profile'
 import FavoriteSection from './Component/other/Favorite/favoriteSection'
 // import Nav from './Component/other/Navbar/Nav'
 
