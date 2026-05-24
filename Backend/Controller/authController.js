@@ -41,7 +41,8 @@ exports.register = async (req, res) => {
         console.log(err);
 
         res.status(500).send({
-            msg: 'Registration failed!'
+            msg: 'Registration failed!',
+            err: error
         });
 
     }
