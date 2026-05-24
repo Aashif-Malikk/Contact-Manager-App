@@ -42,7 +42,7 @@ exports.register = async (req, res) => {
 
         res.status(500).send({
             msg: 'Registration failed!',
-            err: error
+            error: err.message
         });
 
     }
@@ -120,12 +120,12 @@ exports.profileEdit = async (req, res) => {
     try {
         const { userId, email } = req.data
         const userFound = await User.findOne({ email })
-        if (userFound) {            
+        if (userFound) {
             const { name, phone, location } = req.body
             userFound.name = name
             userFound.number = phone
             userFound.location = location
-            
+
             await userFound.save()
 
             res.send({ msg: 'Update successfully' })
@@ -188,7 +188,7 @@ exports.getFavorite = async (req, res) => {
             });
         }
 
-        userFound.addedContact.map((v) => {
+        userFound.addedContact.forEach((v) => {
             if (v._id == favoriteID) {
                 v.favorite = isFavorite;
             }
